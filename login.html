@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+
+        <?php
+
+        $fname = $_POST['firstname'];
+        $lname = $_POST['lastname'];
+
+        echo"name of the uuser is".$fname. " ".$lname.""
+?>
+
+
+
+        <form method="POST" action="form.php">
+            <label>First name</label>
+            <input type="text" name = "firstname" placeholder="Kelvin"/>
+            <label>First last</label>
+            <input type="text" name = "Lastname" placeholder="Wachira"/>
+            <input type="text" name = "Email" placeholder="Kelvin@wachira.com"/>
+            <input type="submit" name="submit"/>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
