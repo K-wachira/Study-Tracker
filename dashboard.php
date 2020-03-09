@@ -2,21 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body class="">
-    <div class="sidenav">   
-        <div class="sidenav-wrapper">             
-           
-            <a href="../pages/dashboard.html">Dashboard</a>
-            <a href="../pages/profile.html">Profile</a>
-            <a href="#">Calendar</a>
-            <a href="#">Syllabus</a>
-            <script type="text/javascript" src="../scripts/script.js"></script> 
-       </div>
-    </div>
- 
+
    
     <div class="main-body">
         <!-- Section one -->
