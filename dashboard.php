@@ -50,7 +50,7 @@
                                                 <tr>
                                                     <?php $current= $value['Total_Units']; $total = $value['Number_of_units_completed']; $percent1 = round(($current/$total )*100,1); ?>
                                                     <style type ="text/css"> .outter1{ height: 15px; width: 300px; border:solid 1px #44f1A6; } .inner1{ height: 15px;
-                                                    width: <?php  echo $percent1;?>%; color: #87ADD6; background-color:#87ADD6; } </style>
+                                                    width:38.5%; color: #87ADD6; background-color:#87ADD6; } </style>
 
                                                     <div class="row">
                                                     <td><?php echo $value['Subject_name'];?> </td>

@@ -77,8 +77,8 @@ class App extends DB {
 
 
 
-    function Getprogress($session){
-        $query = "SELECT * FROM st_class_progress";
+    function Getprogress($session, $class){
+        $query = "SELECT * FROM st_class_progress WHERE class=".$class;
         $result = mysqli_query($this->_dbconn, $query)or die(mysqli_errno());
         $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
 

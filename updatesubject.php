@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-
 <?php
-include 'appform.php';
-$appinst = new App();
 
-if(isset($_POST['subjectname']) && isset($_POST['classname']) && isset($_POST['numberofunits']) && isset($_POST['unitscompleted'])  && isset($_POST['classteacher']) && isset($_POST['numberofstudents'])  && isset($_POST['studentgpa']))
-   {   
 
-    $subjectname = $_POST['subjectname'];
-    $classname = $_POST['classname'];
-    $numberofunits = $_POST['numberofunits'];
-    $unitscompleted = $_POST['unitscompleted'];
-    $classteacher =$_POST['classteacher'];
-    $numberofstudents = $_POST['numberofstudents'];
-    $studentgpa =$_POST['studentgpa'];
 
-    $appinst-> AddSubject($subjectname, $classname ,$numberofunits, $unitscompleted, $classteacher , $numberofstudents, $studentgpa);
-   }
+
+
 ?>
+
+
+
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
