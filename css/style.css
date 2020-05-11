@@ -3,22 +3,24 @@ body {
   }
   
   .sidenav {
-    height: 100%;
-    width: 16%;
+    height: 80%;
+    width: 10%;
     position: fixed;
-    z-index: 2;
+    z-index: 0;
     top: 0;
     left: 0;
-    background: #fff;    
+    background-color:rebeccapurple;    
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);    
 
   }
   .sidenav .sidenav-wrapper {
-    position: relative;
+   
     height: calc(100vh - 85px);
+    background-color:rebeccapurple;    
+
     overflow: auto;
     width: 78%;
     z-index: 4;
@@ -36,7 +38,7 @@ body {
   }
   
   .sidenav a:hover {
-    color:#cc2900;
+    color:#7b88c4;
   }
   
   .sidenav .closebtn {
@@ -61,7 +63,7 @@ body {
 .userprofile{
   width: 90%;
   height: 100px;  
-  background-color: #eee;
+  background-color: rgb(202, 68, 68);
   box-shadow: 10px 10px 5px grey;
   margin: auto; 
   border: 3px solid rgb(199, 227, 230);
@@ -128,7 +130,7 @@ body {
 }
 
 .container .btn:hover {
-  background-color: red;
+  background-color: blue;
   color: white;
 }
 

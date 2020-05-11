@@ -14,10 +14,10 @@ class App extends DB {
         $email = $Email;
         $hashedpass = md5($password);
 
-        echo ( $first_name);
+        echo ($first_name);
         
     
-        $query = "INSERT INTO user_accounts (first_name,last_name,user_names,email_adress, user_passwords) VALUES ('$first_name', '$last_name', '$uname', '$email' ,'$hashedpass')";   
+        $query = "INSERT INTO user_accounts (first_name,last_name,username,email_adress, user_passwords) VALUES ('$first_name', '$last_name', '$uname', '$email' ,'$hashedpass')";   
         echo $query;
         echo "here 2";
         
@@ -83,7 +83,15 @@ class App extends DB {
         $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
         return $row;
+    }
 
+
+      function DashboardStats($session, $class){
+        $query = "SELECT * FROM st_class_progress WHERE class=".$class;
+        $result = mysqli_query($this->_dbconn, $query)or die(mysqli_errno());
+        $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+        return $row;
     }
 
     function AddSubject($subjectname, $classname ,$numberofunits, $unitscompleted, $classteacher , $numberofstudents, $studentgpa){
@@ -100,4 +108,5 @@ class App extends DB {
 
 }
 ?>
+
 

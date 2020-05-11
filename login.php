@@ -25,13 +25,15 @@ if(isset($_POST['user_Email']) && isset($_POST['user_Password']) )
               <input name="user_Email" type="email" class="form-control">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               <input name="user_Password" type="password" class="form-control" id="exampleInputPassword1">
-              <button type="submit" class="btn btn-primary">Submit</button>
-              <a href="signup.php" >Create account</a>
+              <br>
+              <button type="submit" class="btn btn-primary"style = 'background-color: green' >Submit</button>
+              <a href="signup.php"class="btn btn-primary" style = 'background-color: orange' >Create Account</a>
+           
             </div>
 
           </form>
     </body>
-
+    
      
 </html>
 

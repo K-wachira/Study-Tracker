@@ -1,0 +1,43 @@
+.horizontal{
+    float: left;
+    /* border: 1px solid green */
+}
+
+.horizontal  *{
+
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.usernav {
+    float: left;
+    width: fit-content;
+
+}
+
+.usernav  > *{
+    display :block;
+    width: fit-content;
+}
+
+
+
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.ProfileNav{
+    vertical-align: middle;
+  
+    margin: 50px;
+    left: 0px;
+    height: fit-content;
+    align-self: center;
+    
+}
+.usernames{
+    padding: 25px;
+}

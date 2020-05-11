@@ -20,22 +20,42 @@ if(isset($_POST['firstname']) && isset($_POST['Email']) && isset($_POST['lastnam
     <body>
         
         <form method="POST" action="signup.php">
-            <div class="form-group , login_form1">
-            <label>First name</label>
-            <input type="text" name = "firstname" placeholder="Kelvin"/></br></br>
-            <label>Last name</label>
-            <input type="text" name = "lastname" placeholder="wachira"/></br></br>
-            <label>username</label>
-            <input type="text" name = "username" placeholder="kevo"/></br></br>
-            <label>Email</label>
-            <input type="text" name = "Email" placeholder="Kelvin@wachira.com"/></br></br>
-            <label>Password</label>
-            <input type="password" name = "userpassword" placeholder="*********" required/></br></br>
-            <label>Confirm Password</label>
-            <input type="password" name = "userpassword" placeholder="*********" required/></br></br>
+             <div class="form-group , login_form1">
 
-            <input type="submit" name="submit"/>
-            <a href="login.php" >login</a>
+             <div class="form-group">
+                <label >First name:</label>
+                <input  name="firstname" type="text" required>
+             </div>
+
+            <div class="form-group">
+                <label >Last name:</label>
+                <input class="form-control" id="retirement_age" name="lastname" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label for="retirement_age">Username:</label>
+                <input class="form-control" id="retirement_age" name="username" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label for="retirement_age">Email:</label>
+                <input class="form-control" id="retirement_age" name="Email" type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="retirement_age">Password:</label>
+                <input class="form-control" id="retirement_age" name="userpassword" type="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="retirement_age">Confirm Password:</label>
+                <input class="form-control" id="retirement_age" name="userpassword" type="password" required>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary"style = 'background-color: green' >Submit</button>
+            <a href="login.php"class="btn btn-primary" style = 'background-color: orange' >Log in</a>
+
         </div>
         </form>
 

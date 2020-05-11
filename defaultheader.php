@@ -20,16 +20,12 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="index.php?name=dashboard">Study Tracker <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php?name=updatesubject">Update subject</a>
-                </li>
-                <br>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php?name=newsubject">Add new Subject</a>
-                </li>
 
             </ul>
 
+         
+
+           
         </div>
     </div>
 

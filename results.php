@@ -16,7 +16,9 @@
 
 include 'appform.php';
 $newapp = new App();
-include 'header.php';
+
+
+
 if(isset($_GET['class'])){
     $class = $_GET['class'];
     
@@ -33,7 +35,7 @@ $progress = $newapp->Getprogress($_SESSION, $class);
        <div class="col-lg-12">
         <section class="panel">
             
-            <header class="panel-heading">Form 4</header>
+            <header class="panel-heading">Form <?php echo $class; ?> </header>
             <table class="table table-striped table-advance table-hover">
                 <thead>
                     <tr>
