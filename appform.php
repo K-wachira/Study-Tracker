@@ -58,13 +58,30 @@ class App extends DB {
             $_SESSION['email_adress'] =   $row['email_adress'];
             $_SESSION['isloggedin'] =  true;  
             $_SESSION['accss_rights'] = explode(',',$accessrights['accss_rights']); 
-            $_SESSION['user_level'] = $accessrights['user_level'];  
+            $_SESSION['user_level'] = $accessrights['user_level'];
+            $_SESSION['user_level_id'] =  $row['user_level_id'];
+  
 
             header("Location: index.php");
         
  
 
         }
+    }
+
+
+    function UpdateUserLevel($UserEmail, $Newlevel){
+        $query ="UPDATE `user_accounts` SET `user_level_id` = $Newlevel WHERE `user_accounts`.`ID` =$UserEmail;";
+        $results = mysqli_query($this->_dbconn, $query);
+        echo($results);
+        
+        if ($results)
+        {
+            header("Location: index.php?name=manageusers");
+            // echo '<script type="text/javascript">window.location.href="assets/pages/calendar.php";</script>';
+
+        }
+
     }
 
     function GetAccessLevels($id) {
@@ -86,13 +103,22 @@ class App extends DB {
     }
 
 
-      function DashboardStats($session, $class){
+    function DashboardStats($session, $class){
         $query = "SELECT * FROM st_class_progress WHERE class=".$class;
         $result = mysqli_query($this->_dbconn, $query)or die(mysqli_errno());
         $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
         return $row;
     }
+
+    function GetUserMailandName(){
+        $query = "SELECT * FROM user_accounts";
+        $result = mysqli_query($this->_dbconn, $query)or die(mysqli_errno());
+        $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+        return $row;
+    }
+
 
     function AddSubject($subjectname, $classname ,$numberofunits, $unitscompleted, $classteacher , $numberofstudents, $studentgpa){
         $query = "INSERT INTO st_class_progress (Subject_name,class,Number_of_units_completed,Total_Units, Class_teacher,number_of_students,subject_gpa) 
