@@ -3,6 +3,14 @@
 class DB {
 
     function __construct() {
+        // Deployment
+        // $dbhost = 'sql2.freesqldatabase.com';
+        // $dbuname = 'sql2339583';
+        // $dbpass = 'wM9%hW3!';
+        // $dbname = 'sql2339583';
+
+
+        // Development
         $dbhost = 'localhost';
         $dbuname = 'root';
         $dbpass = '';
