@@ -4,17 +4,21 @@ class DB {
 
     function __construct() {
         // Deployment
-        // $dbhost = 'sql2.freesqldatabase.com';
-        // $dbuname = 'sql2339583';
-        // $dbpass = 'wM9%hW3!';
-        // $dbname = 'sql2339583';
+        $dbhost = 'us-cdbr-east-06.cleardb.net';
+        $dbuname = 'b00550ee7b5ab8';
+        $dbpass = 'fd2b9d60';
+        $dbname = 'heroku_258dae5e7a012fc';
+
 
 
         // Development
-        $dbhost = 'localhost';
-        $dbuname = 'root';
-        $dbpass = '';
-        $dbname = 'Study-Tracker';
+
+        // mysql://b00550ee7b5ab8:fd2b9d60@us-cdbr-east-06.cleardb.net/heroku_258dae5e7a012fc?reconnect=true
+
+        // $dbhost = 'localhost';
+        // $dbuname = 'root';
+        // $dbpass = '';
+        // $dbname = 'Study-Tracker';
 
         $this->_dbconn = mysqli_connect($dbhost, $dbuname, $dbpass, $dbname);
 
