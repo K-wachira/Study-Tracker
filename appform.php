@@ -62,7 +62,7 @@ class App extends DB {
             $_SESSION['user_level_id'] =  $row['user_level_id'];
   
 
-            header("Location: index.php");
+            header("Location: index.php?name=dashboard");
         
  
 
@@ -73,7 +73,6 @@ class App extends DB {
     function UpdateUserLevel($UserEmail, $Newlevel){
         $query ="UPDATE `user_accounts` SET `user_level_id` = $Newlevel WHERE `user_accounts`.`ID` =$UserEmail;";
         $results = mysqli_query($this->_dbconn, $query);
-        echo($results);
         
         if ($results)
         {
@@ -128,7 +127,7 @@ class App extends DB {
         if ($results)
             {
              echo"Records have been successfully Added";
-              header("Location: index.php");
+              header("Location: index.php?name=dashboard");
             }
     }
 

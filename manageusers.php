@@ -22,7 +22,7 @@
 
         <div class="grid-item">
             <div class = "heading" >        
-                <a href="<?php echo'index.php?name=results&class=3'; ?>"><i class="fa"></i> Form 3</a>
+                <a href="<?php echo'index.php?name=results&class=3'; ?>"><i class="fa"></i> Platform Users</a>
             </div>
                 <div class="card radius shadowDepth1">
                 
@@ -70,7 +70,7 @@
 
 <?php
 
-if ($_SESSION['user_level_id'] == 1 || $_SESSION['user_level_id']== 3){
+if ( $_SESSION['user_level_id']== 3){
     error_reporting(0);
     include 'footer.php';
     }

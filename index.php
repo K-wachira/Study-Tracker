@@ -12,12 +12,17 @@ session_start();
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study Tracker</title>
+    <link rel="icon" type="image/ico" href="images/emirates.jpg" />
+
+
+<!-- load css  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/cards.css">
+
 </head>
  
 
@@ -46,6 +51,11 @@ session_start();
         <a href="index.php?name=manageusers" >Manage Users</a>  
      </div>
 </div>
+
+<body>
+
+
+</body>
  
 
 <?php 

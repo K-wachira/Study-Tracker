@@ -21,6 +21,15 @@
                     <a class="nav-link" href="index.php?name=dashboard">Study Tracker <span class="sr-only">(current)</span></a>
                 </li>
 
+
+                <li class="nav-item">
+                    <a class="nav-link" href="accessdenied.php">Update subject</a>
+                </li>
+                <br>
+                <li class="nav-item">
+                    <a class="nav-link" href="accessdenied.php">Add new Subject</a>
+                </li>
+
             </ul>
 
          

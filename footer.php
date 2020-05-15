@@ -3,7 +3,9 @@
     $appinst = new App();
 
     if(isset($_POST['emails']) && isset($_POST['changelevel']))
+
         {   
+            echo "Update sucessful"
             $appinst-> UpdateUserLevel(($_POST['emails']), ($_POST['changelevel']));
         }
 
