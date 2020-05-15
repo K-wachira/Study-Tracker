@@ -70,7 +70,7 @@
 
 <?php
 
-if ( $_SESSION['user_level_id']==  || $_SESSION['user_level_id']== 1){
+if ( $_SESSION['user_level_id']==3  || $_SESSION['user_level_id']== 1){
     error_reporting(0);
     include 'footer.php';
     }
