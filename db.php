@@ -4,10 +4,10 @@ class DB {
 
     function __construct() {
         // // Deployment
-        // $dbhost = 'us-cdbr-east-06.cleardb.net';
-        // $dbuname = 'b00550ee7b5ab8';
-        // $dbpass = 'fd2b9d60';
-        // $dbname = 'heroku_258dae5e7a012fc';
+        $dbhost = 'us-cdbr-east-06.cleardb.net';
+        $dbuname = 'b00550ee7b5ab8';
+        $dbpass = 'fd2b9d60';
+        $dbname = 'heroku_258dae5e7a012fc';
 
 
 
@@ -19,10 +19,10 @@ class DB {
 
     
 
-        $dbhost = 'localhost';
-        $dbuname = 'root';
-        $dbpass = '';
-        $dbname = 'Study-Tracker';
+        // $dbhost = 'localhost';
+        // $dbuname = 'root';
+        // $dbpass = '';
+        // $dbname = 'Study-Tracker';
 
         $this->_dbconn = mysqli_connect($dbhost, $dbuname, $dbpass, $dbname);
 
